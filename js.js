@@ -9,33 +9,9 @@ generateBtn4.addEventListener("click", function(event){
     var userinput = {
         firstWord: input4.value.trim()
     };
-
+    //rhymeAPI(userinput);
 
 })
-
-
-
-function rhymeAPI() {
-    var requestUrl4 = "https://www.stands4.com/services/v2/rhymes.php?uid=1001&tokenid=tk324324&term=rhyme&format=json";
-
-    fetch(requestUrl4)
-        .then(function (response){
-            return response.json();
-        })
-    .then(function(data){
-        console.log(data)
-        for (var i = 0; i < data.length; i++) {
-            var 
-        }
-    })
-}
-
-
-
-
-
-
-
 
 
 

@@ -127,7 +127,17 @@
   <div class="card">
     <img src="#" alt="Card 4">
     <h2>Card 4</h2>
-    <input type = "text" id = "rhymeinput">
+    <!-- <input type = "text" id = "rhymeinput"> -->
+    <form action="javascript:RhymeBrainSubmit()">
+      <input type=text id="RhymeBrainInput">
+      <input type=submit value="Rhyme">
+  </form>
+  <script type="text/javascript">
+      var RhymeBrainMaxResults = 1;
+  </script>
+  <script type="text/javascript" src="https://rhymebrain.com/external.js"></script>
+  <!-- Rhyme results are provided by <a href="https://rhymebrain.com">RhymeBrain.com</a> -->
+  
 <p class=col-lg-12 id="emptyarea"></p>
     <footer class="card-footer">
         <a href="#" id="generate4" class="card-footer-item">Generate</a>
