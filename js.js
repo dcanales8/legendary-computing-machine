@@ -20,12 +20,19 @@ $(document).ready(function() {
 
     function generateLyric() {
       var lyrics = [
-        ["It's better to burn out, than to fade away.", "Neil Young, My My, Hey Hey"],
-        ["I am the key to the lock in your house that keeps your toys in the basement / And if you get too far inside, you'll only see your reflection.", "Radiohead, Climbing Up the Walls"],
+        ["Hello, it’s me – Adele, Hello"],
+        ["To the left, to the left, everything you own in a box to the left – Beyonce, Irreplaceable"],
         ["All you need is love, love. Love is all you need.", "Beatles, All You Need Is Love"],
-        ["The preacher said, you know you always have the Lord by your side. And I was so pleased to be informed of this that I ran twenty red-lights in his name.", "Rolling Stones, Far Away Eyes"],
-        ["And I am not afraid of dying, why should I be? We all gotta go sometime.", "Pink Floyd, The Great Gig In The Sky"],
-        ["Day destroys the night, night divides the day. Tried to run, tried to hide, break on through to the other side.", "The Doors, Break On Through"]
+        ["You’re the one that I want (you are the one I want) Oo-oo-oo, honey The one that I want (you are the one I want) – John Travolta, You’re The One That I Want"],
+        ["Take on me (take on me)Take me on (take on me) I’ll be gone In a day or two – a-ha, Take On Me"],
+        ["Nice to meet you, where you been, I can show you incredible things – Taylor Swift, Blank Space"],
+        ["Say it ain’t so, I will not go Turn the lights off, carry me home – Blink-182, All the Small Things"],
+        ["Today was gonna be the day But they’ll never throw it back to you By now you should’ve somehow Realized what you’re not to do I don’t believe that anybody Feels the way I do, about you now – Oasis, Wonderwall"],
+        ["Do you remember when we used to sing Sha la la la la la la la la la la dee dah – Van Morrison, Brown Eyed Girl"],
+        ["Don’t stop believin’ Hold on to the feelin’ Streetlights, people – Journey, Don’t Stop Believin"],
+        ["Take my hand, take my whole life too, but I can’t help falling in love with you – Elvis Presley, Can’t Help Falling In Love"],
+        ["I get knocked down, but I get up again – Chumbawamba, I Get Knocked Down"],
+        ["We are the champions, my friends And we’ll keep on fighting ’til the end – Queen, We Are The Champions"]
       ];
   
       var randomNumber = Math.floor(Math.random() * lyrics.length);
