@@ -5,6 +5,10 @@
   justify-content: center;
 } */
 
+body {
+  background-color: #b7deed;
+}
+
 .sectionCards {
     display: flex;
     flex-wrap: wrap;
@@ -49,3 +53,27 @@
 .card-footer-item:hover {
 
 }
+
+.textel {
+  color: #055b80;
+}
+
+.musicicon {
+  max-width: 20%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navicon {
+  max-width: 100%;
+  height: auto;
+}
+
+.navtitle {
+  margin-bottom: auto;
+  margin-top: auto;
+  font-weight: bolder;
+}
+
+/* darker color: #023A53 */
