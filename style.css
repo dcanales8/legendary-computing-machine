@@ -76,4 +76,9 @@ body {
   font-weight: bolder;
 }
 
+.sitedesc {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1%;
+}
 /* darker color: #023A53 */
