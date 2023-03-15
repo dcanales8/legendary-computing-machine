@@ -62,53 +62,80 @@ $(document).ready(function() {
   });
 
 
+// Random Song API
+// var random_song_out = "";
+// document.getElementById("savec2").addEventListener("click",saverandomsong);
+// const r_song = document.querySelector('#generatec2');
+// r_song.addEventListener('click', newRandomSong);
+
+// function saverandomsong(){
+//   localStorage.setItem("randomsong",random_song_out)
+//   document.getElementById("savec2").style.display="none";
+//   document.getElementById("clearc2").style.display="flex";
 
 
+// var CLIENTID = "Eq8KSecb2Yz4Lq--EUjuGWH_8OifHCRwdwHr1ztKdLx5Qk_zCZG--AXPSQzMXhL-";
+// var CLIENTSECRET = "-3Ynmxt9BZab3Qs5sbr_GdzGxXoGqSqbSISFuEQwquYeVm-5-A3nFIcgUOvDSY731GT-hhJtvTK5jYDccT7juQ";
+// var accessToken = "?access_token=CXyFeSBw2lAdG41xkuU3LS6a_nwyxwwCz2dCkUohw-rw0C49x2HqP__6_4is5RPx";
+// var API = "https://api.genius.com/search";
+// var APISong = "https://api.genius.com/songs/";
+// var songID = "2471960";
+// var maxSong = 2471960;
+// //Max song is 489579 for a fairly safe number. But 2 million songs 
 
+// /**
+//  * Returns a random integer between min (inclusive) and max (inclusive)
+//  */
+// function getRandomInt(min, max) {
+//   return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
 
-
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   // Functions to open and close a modal
-//   function openModal($el) {
-//     $el.classList.add('is-active');
-//   }
-
-//   function closeModal($el) {
-//     $el.classList.remove('is-active');
-//   }
-
-//   function closeAllModals() {
-//     (document.querySelectorAll('.modal') || []).forEach(($modal) => {
-//       closeModal($modal);
-//     });
-//   }
-
-//   // Add a click event on buttons to open a specific modal
-//   (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
-//     const modal = $trigger.dataset.target;
-//     const $target = document.getElementById(modal);
-
-//     $trigger.addEventListener('click', () => {
-//       openModal($target);
-//     });
-//   });
-
-//   // Add a click event on various child elements to close the parent modal
-//   (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
-//     const $target = $close.closest('.modal');
-
-//     $close.addEventListener('click', () => {
-//       closeModal($target);
-//     });
-//   });
-
-//   // Add a keyboard event to close all modals
-//   document.addEventListener('keydown', (event) => {
-//     const e = event || window.event;
-
-//     if (e.keyCode === 27) { // Escape key
-//       closeAllModals();
+// //https://api.genius.com/search?q=Kendrick%20Lamar
+// var xhr = new XMLHttpRequest(); //XML HTTP Request
+// xhr.onreadystatechange = function () {
+//   if (xhr.readyState === 4) {
+//     if (xhr.status === 200 || xhr.status === 304) {
+//       // Success! Do stuff with data.
+//       //console.log(xhr.responseText); 
 //     }
-//   });
-// });
+//   }
+// };
+// xhr.open("GET", APISong + songID + accessToken, false);
+// //xhr.open("GET", API+accessToken+ '&q=Kendrick%20Lamar', false);
+
+// xhr.send();
+// //console.log(xhr.status);
+// //console.log(xhr.statusText);
+// demo = xhr.response;
+
+// var json = JSON.parse(demo);
+// var song = json['response']['song'];
+
+
+// function newRandomSong() {
+//   songID = getRandomInt(1, maxSong);
+//   randomSong();
+// }
+
+// function randomSong() {
+//   xhr.open("GET", APISong + songID + accessToken, false);
+//   xhr.send();
+//   demo = xhr.response;
+
+//   while (xhr.status === 404) { //Checks if the Random Song Exists
+//     songID = getRandomInt(1, maxSong);
+//     xhr.open("GET", APISong + songID + accessToken, false);
+//     xhr.send();
+//     demo = xhr.response;
+//   }
+
+//   json = JSON.parse(demo);
+//   song = json['response']['song'];
+//   console.log(song);
+//   random_song_out+=`<ul><li><b>Artist Name:</b>${song['artist_names']}</li></ul>`;
+//   random_song_out+=`<li><b>Title:</b>${song['full_title']}</li>`;
+//   random_song_out+=`<li><b>Song:</b>${song['embed_content']}</li>`;
+//   document.getElementById("card2").querySelector(".result").innerHTML = random_song_out;
+//   document.getElementById("savec2").disabled=false;
+// };
+
